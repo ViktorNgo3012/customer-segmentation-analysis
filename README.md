@@ -146,14 +146,72 @@ The following data preparation steps were completed:
 
 # 2. SQL Analysis
 
-*This section will document the SQL queries used for customer analysis, data exploration, and business reporting.*
+SQL was used to support data exploration, validation, and data preparation throughout the project. Queries were developed to demonstrate fundamental SQL skills and to assist with preparing the cleaned datasets for subsequent analysis and visualisation in Power BI.
+
+The SQL analysis included activities such as:
+
+- Retrieving and exploring customer and transaction data.
+- Filtering and summarising records using aggregate functions.
+- Joining multiple tables to create integrated datasets for analysis.
+- Validating data consistency after the data cleaning process.
+- Preparing structured datasets for exploratory analysis, RFM analysis, customer segmentation, and dashboard development.
+
+The SQL scripts in this project demonstrate practical data manipulation and querying techniques commonly used in data analytics workflows.
 
 ---
 
 # 3. Exploratory Data Analysis (EDA)
 
-*This section will present exploratory visualisations and statistical summaries used to understand customer behaviour and purchasing patterns.*
+Exploratory Data Analysis (EDA) was conducted on each cleaned dataset to understand customer characteristics, purchasing behaviour, and geographical distribution before performing customer segmentation. The analysis combined descriptive statistics with data visualisation to identify patterns, assess variable distributions, and provide business context for the subsequent RFM analysis.
 
+The EDA covered four datasets:
+
+### Transactions
+The transaction dataset was analysed to understand purchasing behaviour and sales activity. The analysis included:
+
+- Transaction volume over time
+- Monthly transaction distribution
+- Day-of-week purchasing patterns
+- Product pricing and profit distributions
+- Product and brand frequency analysis
+
+### Customer Demographic
+The customer demographic dataset was explored to understand the characteristics of existing customers. The analysis included:
+
+- Gender distribution
+- Age distribution
+- Past three years of bike-related purchases
+- Customer tenure
+- Wealth segment distribution
+- Vehicle ownership
+- Job industry categories
+- Most common job titles
+
+### Customer Address
+The customer address dataset was analysed to examine customer location characteristics. The analysis included:
+
+- Customer distribution by state
+- Property valuation distribution
+- Most common customer postcodes
+
+### New Customer List
+The prospective customer dataset was explored to understand the characteristics of potential customers. The analysis included:
+
+- Gender distribution
+- Age distribution
+- Past three years of bike-related purchases
+- Customer tenure
+- Wealth segment distribution
+- Vehicle ownership
+- Job industry categories
+- Job title distribution
+- Geographic distribution by state and postcode
+- Property valuation
+- Correlation analysis between numerical variables
+
+### Key Outcome
+
+The exploratory data analysis provided a comprehensive understanding of customer demographics, purchasing behaviour, and geographic characteristics. These insights validated the quality of the cleaned datasets, highlighted important customer patterns, and established the analytical foundation for the RFM analysis, customer segmentation, and Power BI dashboard developed in the later stages of the project.
 ---
 
 # 4. RFM Analysis
