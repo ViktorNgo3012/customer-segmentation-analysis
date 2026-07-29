@@ -396,9 +396,34 @@ The dashboard transforms the analytical workflow into an interactive decision-su
 The dashboard demonstrates how data preparation, exploratory analysis, RFM modelling, customer segmentation, and business intelligence reporting can be integrated into an end-to-end analytics solution that supports data-driven decision-making.
 ---
 
-# 7. Business Insights
+## 7. Business Insights
 
-*This section will summarise the key analytical findings and business recommendations derived from the project.*
+The project demonstrates an end-to-end customer analytics workflow, transforming raw transactional and customer data into actionable business insights through data preparation, exploratory analysis, RFM modelling, customer segmentation, and interactive business intelligence reporting.
+
+The analysis identified meaningful differences in customer purchasing behaviour by evaluating customers across three dimensions: purchasing recency, purchasing frequency, and monetary value. Applying the RFM framework enabled customers with similar behavioural characteristics to be grouped into distinct segments, providing a more informative view of the customer base than analysing transaction data alone.
+
+Key analytical outcomes include:
+
+- Development of a customer-level RFM framework to quantify purchasing behaviour.
+- Identification of behavioural customer segments using Recency, Frequency, and Monetary scores.
+- Comparative analysis of customer value across different behavioural segments.
+- Evaluation of revenue contribution by customer segment.
+- Analysis of monthly revenue trends and product brand performance.
+- Integration of analytical outputs into an interactive Power BI dashboard for business reporting.
+
+Together, these analyses demonstrate how customer transaction data can be transformed into meaningful business intelligence that supports customer-centric decision-making.
+
+### Potential Business Applications
+
+The analytical framework developed in this project can support organisations in:
+
+- Understanding customer purchasing behaviour through behavioural segmentation.
+- Identifying high-value customer groups.
+- Monitoring revenue performance across customer segments and product brands.
+- Supporting customer retention and engagement initiatives using behavioural insights.
+- Providing interactive reporting for operational and strategic decision-making.
+
+Although this project was developed using a sample retail dataset, the analytical workflow is broadly applicable to customer analytics problems across retail, e-commerce, membership programs, financial services, and other customer-focused industries.
 
 ---
 
@@ -418,6 +443,13 @@ customer-segmentation-analysis/
 │       ├── CustomerAddress_Cleaned.xlsx
 │       └── NewCustomerList_Cleaned.xlsx
 │
+├── 01_transactions_eda.ipynb
+├── 02_customer_demographic_eda.ipynb
+├── 03_customer_address_eda.ipynb
+├── 04_new_customer_list_eda.ipynb
+├── Customer_RFM_Analysis.ipynb
+├── Customer_Segmentation_Dashboard.png
+│
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -427,9 +459,8 @@ customer-segmentation-analysis/
 
 ## Tools and Technologies
 
-- Microsoft Excel
-- Python
-- SQL
-- Power BI
-- Git
-- GitHub
+- **Microsoft Excel** – Initial data inspection and dataset management.
+- **Python** – Data cleaning, exploratory data analysis (EDA), RFM analysis, customer segmentation, and data visualisation.
+- **SQL** – Data validation, querying, and table integration to support analytical workflows.
+- **Power BI** – Interactive dashboard development and business intelligence reporting.
+- **Git & GitHub** – Version control, project documentation, and portfolio management.
