@@ -1,4 +1,9 @@
 # Customer Segmentation Analysis
+### Customer Segmentation Dashboard
+
+<p align="center">
+  <img src="Customer_Segmentation_Dashboard.png" width="1000">
+</p>
 
 ## Project Overview
 
