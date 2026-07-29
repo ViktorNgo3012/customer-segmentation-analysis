@@ -214,15 +214,104 @@ The prospective customer dataset was explored to understand the characteristics 
 The exploratory data analysis provided a comprehensive understanding of customer demographics, purchasing behaviour, and geographic characteristics. These insights validated the quality of the cleaned datasets, highlighted important customer patterns, and established the analytical foundation for the RFM analysis, customer segmentation, and Power BI dashboard developed in the later stages of the project.
 ---
 
-# 4. RFM Analysis
+## 4. RFM Analysis
 
-*This section will document the Recency, Frequency, and Monetary (RFM) analysis used to evaluate customer value and purchasing behaviour.*
+Recency, Frequency, and Monetary (RFM) analysis was conducted to quantify customer purchasing behaviour and establish a structured framework for customer segmentation. The analysis follows a complete analytical workflow, beginning with transaction validation, progressing through metric calculation and quartile-based scoring, and concluding with customer-level behavioural profiling.
+
+### Data Preparation and Validation
+
+The transaction dataset was first validated to ensure that the RFM analysis was based on reliable purchasing information. Validation procedures included:
+
+- Verifying transaction completeness and data consistency.
+- Confirming the observation period used for the analysis.
+- Identifying the number of valid customers and transaction records.
+- Retaining only approved transactions for customer value analysis.
+
+These validation steps ensured that the calculated RFM metrics accurately reflected genuine customer purchasing behaviour.
+
+### Calculate RFM Metrics
+
+Customer purchasing behaviour was summarised using three quantitative metrics:
+
+- **Recency (R)** – Number of days since the customer's most recent approved purchase, calculated using a snapshot date immediately following the latest transaction.
+- **Frequency (F)** – Total number of approved purchase transactions completed by each customer during the observation period.
+- **Monetary (M)** – Total purchase value accumulated by each customer based on approved transactions.
+
+The three metrics were combined into a customer-level RFM table, where each row represents the purchasing history of an individual customer.
+
+### Examine Metric Distributions
+
+Before assigning customer scores, the distributions of the Recency, Frequency, and Monetary variables were examined to understand customer purchasing behaviour and assess the suitability of the scoring methodology.
+
+This exploratory assessment provided insight into customer activity patterns and supported the use of quartile-based scoring.
+
+### Quartile-Based RFM Scoring
+
+Each customer was assigned a Recency, Frequency, and Monetary score ranging from **1 to 4** using quartile-based segmentation.
+
+The scoring methodology follows the business interpretation of each metric:
+
+- Customers with more recent purchases receive higher **Recency** scores.
+- Customers who purchase more frequently receive higher **Frequency** scores.
+- Customers with higher total spending receive higher **Monetary** scores.
+
+The three scores were then combined to create an **RFM Code**, providing a compact representation of each customer's purchasing behaviour.
+
+### RFM Code Analysis
+
+The distribution of RFM Codes was analysed to understand the diversity of customer purchasing behaviours across the customer base.
+
+Examining the frequency of different RFM Code combinations provided an intermediate analytical step before grouping customers into broader behavioural segments.
+
+### Analytical Outcome
+
+The completed RFM framework transformed individual transaction records into customer-level behavioural metrics that quantify purchasing recency, purchasing frequency, and customer value. This framework provides the foundation for behavioural customer segmentation and subsequent business analysis.
 
 ---
 
-# 5. Customer Segmentation
+## 5. Customer Segmentation
 
-*This section will present the customer segmentation methodology and describe the characteristics of each customer segment.*
+Following the construction of the RFM framework, customers were classified into behavioural segments based on their Recency, Frequency, and Monetary scores. The objective of the segmentation was to transform customer purchasing behaviour into meaningful business groups that can support customer relationship management, targeted marketing, and strategic decision-making.
+
+### Customer Segmentation Framework
+
+Rather than interpreting hundreds of individual RFM Code combinations, customers were consolidated into broader behavioural segments using predefined business rules based on their RFM score profiles.
+
+This approach simplifies customer analysis while preserving the underlying purchasing characteristics captured by the RFM model.
+
+### Segment Validation
+
+After customer segments were assigned, the segmentation framework was validated by comparing the average purchasing behaviour of customers within each segment.
+
+The validation process examined:
+
+- Average Recency
+- Average Frequency
+- Average Monetary value
+
+This assessment confirmed that the behavioural characteristics of each segment aligned with the intended customer classification.
+
+### Customer Distribution Analysis
+
+The distribution of customers across all behavioural segments was analysed to understand the composition of the customer base.
+
+This analysis identified the relative size of each segment and highlighted differences in customer engagement across the business.
+
+### Revenue Contribution Analysis
+
+Customer segments were further evaluated based on their contribution to total revenue.
+
+Analysing revenue alongside customer distribution provides a more complete understanding of customer value by identifying segments that generate a disproportionate share of business revenue rather than simply containing the largest number of customers.
+
+### Executive Customer Profile
+
+The final stage of the analysis consolidated customer distribution, purchasing behaviour, and revenue contribution into an executive customer profile.
+
+This summary provides a high-level overview of customer behaviour across all segments and serves as the analytical foundation for the interactive Power BI dashboard and subsequent business recommendations.
+
+### Business Value
+
+The customer segmentation framework enables organisations to move beyond transaction-level reporting by identifying customer groups with distinct behavioural characteristics. These insights support evidence-based decision-making for customer retention, loyalty initiatives, targeted marketing campaigns, customer reactivation strategies, and revenue optimisation.
 
 ---
 
